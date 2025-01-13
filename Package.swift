@@ -3,17 +3,17 @@
 import PackageDescription
 
 let package = Package(
-  name: "EventSource",
+  name: "TKEventSource",
   platforms: [.iOS(.v14), .macOS(.v12)],
   products: [
     .library(
-      name: "EventSource",
-      targets: ["EventSource"]),
+      name: "TKEventSource",
+      targets: ["TKEventSource"]),
   ],
   targets: [
     .target(
-      name: "EventSource"),
-    .testTarget(name: "EventSourceTests",
-                dependencies: ["EventSource"])
+      name: "TKEventSource"),
+    .testTarget(name: "TKEventSourceTests",
+                dependencies: ["TKEventSource"])
   ]
 )
